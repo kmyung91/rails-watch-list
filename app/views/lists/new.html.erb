@@ -1,0 +1,9 @@
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+  <a class="navbar-brand" href="#">Watch List</a>
+</nav>
+
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Create list", class: "btn btn-primary" %>
+<% end %>
