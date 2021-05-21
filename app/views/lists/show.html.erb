@@ -6,7 +6,7 @@
 
 <% @list.bookmarks.each do |bookmark| %>
   <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="https://picsum.photos/150/100" alt="movie poster">
+    <%= image_tag "#{bookmark.movie.poster_url}", class: "card-img-top" %>
     <div class="card-body">
       <p class="card-text">
         <%= bookmark.movie.title %>
